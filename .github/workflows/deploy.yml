@@ -38,7 +38,7 @@ jobs:
         run: |
           moon update
           moon install
-          moon build --target js
+          moon build --target js --release
 
       - name: Build Vite
         run: npm run build
