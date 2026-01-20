@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lomo Sync Lab</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="app">
+        <header class="hero">
+          <h1>Lomo Sync Lab</h1>
+          <p>
+            Two peers, one link. Edit rich text offline, then reconnect to watch
+            the CRDT merge in real time. This demo runs MoonBit-compiled lomo in
+            the browser.
+          </p>
+        </header>
+        <section class="workspace">
+          <article class="panel editor" data-side="left">
+            <div class="editor__header">
+              <div class="editor__title">Left peer</div>
+              <div class="editor__badge">peer 1</div>
+            </div>
+            <div class="toolbar">
+              <button data-mark="bold">Bold</button>
+              <button data-mark="italic">Italic</button>
+              <button data-mark="underline">Underline</button>
+              <button data-mark="code">Code</button>
+              <button data-action="clear" data-tone="warn">Clear marks</button>
+            </div>
+            <div
+              class="editor__body"
+              data-editor="left"
+              contenteditable="true"
+              spellcheck="false"
+              data-placeholder="Type on the left..."
+            ></div>
+          </article>
+          <aside class="panel network">
+            <div class="network__title">Network</div>
+            <label class="switch">
+              <input id="linkToggle" type="checkbox" checked />
+              <span class="switch__thumb"></span>
+            </label>
+            <div class="network__status">
+              <span class="network__pulse is-online" id="linkPulse"></span>
+              <span id="linkLabel">Online</span>
+            </div>
+            <div class="network__queue">
+              <div class="queue-item">A -> B <span id="queueAB">0</span></div>
+              <div class="queue-item">B -> A <span id="queueBA">0</span></div>
+            </div>
+          </aside>
+          <article class="panel editor" data-side="right">
+            <div class="editor__header">
+              <div class="editor__title">Right peer</div>
+              <div class="editor__badge">peer 2</div>
+            </div>
+            <div class="toolbar">
+              <button data-mark="bold">Bold</button>
+              <button data-mark="italic">Italic</button>
+              <button data-mark="underline">Underline</button>
+              <button data-mark="code">Code</button>
+              <button data-action="clear" data-tone="warn">Clear marks</button>
+            </div>
+            <div
+              class="editor__body"
+              data-editor="right"
+              contenteditable="true"
+              spellcheck="false"
+              data-placeholder="Type on the right..."
+            ></div>
+          </article>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

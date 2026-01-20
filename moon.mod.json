@@ -1,0 +1,8 @@
+{
+  "name": "Lampese/lomo_web",
+  "version": "0.0.1",
+  "deps": {
+    "Lampese/lomo": "0.0.5"
+  },
+  "source": "mbt"
+}

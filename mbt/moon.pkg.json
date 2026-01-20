@@ -1,0 +1,28 @@
+{
+  "import": [
+    "Lampese/lomo",
+    {
+      "path": "Lampese/lomo/types",
+      "alias": "lomo_types"
+    },
+    {
+      "path": "Lampese/lomo/container",
+      "alias": "container"
+    }
+  ],
+  "link": {
+    "js": {
+      "format": "esm",
+      "exports": [
+        "create_doc",
+        "apply_edit_utf16",
+        "mark_utf16",
+        "unmark_utf16",
+        "render_html",
+        "get_text",
+        "drain_updates",
+        "apply_updates"
+      ]
+    }
+  }
+}

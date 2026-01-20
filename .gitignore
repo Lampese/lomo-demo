@@ -1,0 +1,9 @@
+dist/
+.vite/
+target
+_build/
+target/
+.DS_Store
+.mooncakes/
+node_modules/
+package-lock.json

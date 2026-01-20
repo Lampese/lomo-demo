@@ -1,0 +1,28 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "Lampese/lomo_web"
+
+// Values
+pub fn apply_edit_utf16(Int, Int, Int, String) -> Bool
+
+pub fn apply_updates(Int, Array[Bytes]) -> Bool
+
+pub fn create_doc(Int) -> Int
+
+pub fn drain_updates(Int) -> Array[Bytes]
+
+pub fn get_text(Int) -> String
+
+pub fn mark_utf16(Int, Int, Int, String) -> Bool
+
+pub fn render_html(Int) -> String
+
+pub fn unmark_utf16(Int, Int, Int, String) -> Bool
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits
+
